@@ -21,6 +21,7 @@ function addElementToInput(button)
 
 function operator(button)
 {
+    numberOfClicks += 1
     let op = button.getAttribute("data-value")
     if (numberOfClicks > 0)
     {
@@ -42,13 +43,11 @@ function equals()
     {
         equal = Function("return "+ output)()
         outputElement.innerHTML = equal
-        pressedEquals = True
-        outputElement.style.backgroundColor = "green"
-        numberOutput = ""
+        numbers = []
         input = ""
         output = ""
         equal = 0
-        numbers = []
+        numberOutput = ""
         numberOfClicks = 0
     }
 }
