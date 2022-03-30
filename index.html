@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="styles.css">
+        <div class = button-container>
+            <h2 id="input">0</h2>
+            <h1 id="output">0</h1>
+            <button class="btn" id="one" data-value="1" onclick="addElementToInput(this)">1</button>
+            <button class="btn" id="two" data-value="2" onclick="addElementToInput(this)">2</button>
+            <button class="btn" id="three" data-value="3" onclick="addElementToInput(this)">3</button>
+            <button class="btn" id="four" data-value="4" onclick="addElementToInput(this)">4</button>
+            <button class="btn" id="five" data-value="5" onclick="addElementToInput(this)">5</button>
+            <button class="btn" id="six" data-value="6" onclick="addElementToInput(this)">6</button>
+            <button class="btn" id="seven" data-value="7" onclick="addElementToInput(this)">7</button>
+            <button class="btn" id="eight" data-value="8" onclick="addElementToInput(this)">8</button>
+            <button class="btn" id="nine" data-value="9" onclick="addElementToInput(this)">9</button>
+            <button class="btn" id="multiply" data-value="*" onclick="operator(this)">*</button>
+            <button class="btn" id="zero" data-value="0" onclick="addElementToInput(this)">0</button>
+            <button class="btn" id="divide" data-value="/" onclick="operator(this)">/</button>
+            <button class="btn" id="plus" data-value="+" onclick="operator(this)">+</button>
+            <button class="btn" id="minus" data-value="-" onclick="operator(this)">-</button>
+            <button class="btn" id="back" onclick="back()"><</button>
+            <button class="btn" id="left-parenthesis" data-value="(" onclick="addElementToInput(this)">(</button>
+            <button class="btn" id="right-parenthesis" data-value=")"onclick="addElementToInput(this)">)</button>
+            <button class="btn" id="equals" onclick="equals()">=</button>
+            <button class="btn" id="log" onclick="logWrite()">log</button>
+            <button class="btn" id="dot" data-value="."onclick="addElementToInput(this)">.</button>
+            <button class="btn" id="comma" data-value=","onclick="addElementToInput(this)">,</button>
+        </div>
+        <script src="index.js"></script>
+
+    </body>
+</html>
