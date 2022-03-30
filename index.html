@@ -5,7 +5,8 @@
     </head>
 
     <body>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" id="dark-mode" href="styles.css">
+        <link rel="stylesheet alternate" id="blue-mode" href="styles_alternative.css">
         <div class = button-container>
             <h2 id="input">0</h2>
             <h1 id="output">0</h1>
@@ -18,19 +19,25 @@
             <button class="btn" id="seven" data-value="7" onclick="addElementToInput(this)">7</button>
             <button class="btn" id="eight" data-value="8" onclick="addElementToInput(this)">8</button>
             <button class="btn" id="nine" data-value="9" onclick="addElementToInput(this)">9</button>
-            <button class="btn" id="multiply" data-value="*" onclick="operator(this)">*</button>
+            <button class="btn" id="multiply" data-value="*" onclick="operator(this)">×</button>
             <button class="btn" id="zero" data-value="0" onclick="addElementToInput(this)">0</button>
             <button class="btn" id="divide" data-value="/" onclick="operator(this)">/</button>
+            <button class="btn" id="power" data-value="**"onclick="addElementToInput(this)">^</button>
             <button class="btn" id="plus" data-value="+" onclick="operator(this)">+</button>
             <button class="btn" id="minus" data-value="-" onclick="operator(this)">-</button>
+            <button class="btn" id="log" onclick="logWrite()">log</button>
+            <button class="btn" id="comma" data-value=","onclick="addElementToInput(this)">,</button>
             <button class="btn" id="back" onclick="back()"><</button>
             <button class="btn" id="left-parenthesis" data-value="(" onclick="addElementToInput(this)">(</button>
             <button class="btn" id="right-parenthesis" data-value=")"onclick="addElementToInput(this)">)</button>
             <button class="btn" id="equals" onclick="equals()">=</button>
-            <button class="btn" id="log" onclick="logWrite()">log</button>
             <button class="btn" id="dot" data-value="."onclick="addElementToInput(this)">.</button>
-            <button class="btn" id="comma" data-value=","onclick="addElementToInput(this)">,</button>
+            <button class="btn" id="reset" onclick="reset()">RESET</button>
         </div>
+        <div class = button-container-outside>
+            <button class="btn-outside" id="stylesheet-change" onclick="stylesheeetChange()">MODE</button>
+        </div>
+
         <script src="index.js"></script>
 
     </body>
