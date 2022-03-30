@@ -54,6 +54,7 @@ function equals()
     if (numberOfClicks != 0)
     {
         equal = Function("return "+ output)()
+        equal = Math.round(equal * 1e6) / 1e6
         outputElement.innerHTML = equal
         numbers = []
         input = ""
