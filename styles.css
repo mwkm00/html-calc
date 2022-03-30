@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body
 {
-    background-color: #39518a;
+    font-family: "Open Sans", sans-serif;
+    background-color: #324675;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -12,41 +15,63 @@ body
 {
     --button-height: 40px;
     --button-width: 100px;
-    --text-color: rgb(132, 221, 180);
+    --text-color: rgb(255, 255, 255);
     --stroke-color: white;
 }
 
 .btn
 {
-    position: relative;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    font-size: 14px;
+    cursor: pointer;
     margin-bottom: 1px;
     border-radius: 0.5em;
     font-weight: bold;
-    border: none;
     height: var(--button-height);
     width: var(--button-width);
     color: var(--text-color);
     background-color: #212942;
-    cursor: pointer
 }
 .btn:hover
 {
     background-color: #0f1320;
 }
 
+#back:hover
+{
+    background-color: #300000;
+}
+
+#equals:hover
+{
+    background-color: #003000;
+}
+
 .button-container {
     width: 310px;
     padding: 1em;
     border-style: solid;
-    background: #555555;
     overflow-y: auto;
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
 }
 
 h1,h2
 {
-    border-style: solid;
-    background-color: rgb(148, 148, 148);
+    
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(134, 133, 133, 0.178);
+    backdrop-filter: blur(10px);
     width: 303px;
+    color: white
 }
 
 #back
