@@ -101,7 +101,7 @@ function back()
 
 function log(x, y) 
 {
-    return Math.log(y) / Math.log(x);
+    return (Math.round(Math.log(y) / Math.log(x) * 1e6) / 1e6);
 }
 
 function logWrite()
